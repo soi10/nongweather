@@ -47,6 +47,19 @@
                 />
               </div>
             </div>
+            <div class="row mt-2">
+              <div class="col">
+                <p class="card-text">
+                  Day : {{ (state.main.temp_max - 273.15).toFixed(2) }} &#8451;
+                </p>
+              </div>
+              <div class="col">
+                <p class="card-text">
+                  Night :
+                  {{ (state.main.temp_min - 273.15).toFixed(2) }} &#8451;
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
